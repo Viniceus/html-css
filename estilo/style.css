@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Kablammo&family=Lexend:wght@100..900&display=swap');
+
+:root{
+     --cor0: #f1f1f1;
+     --cor1: #c7c7c74d;
+     --azul:#2678C6;
+     --verde:#1F9962;
+     --amarelo:#FFBC31;
+     --cinzadark:#434343;
+
+     --fonte-padrao: 'Lexend', Arial, sans-serif;
+}
+*{
+    margin: 10px;
+    padding: 0px;
+    
+}
+body{
+    background-color: var(--cor0) ;
+    font-family: var(--fonte-padrao);
+   
+}
+header{
+     background-color: var(--cor1) ;
+     padding: 10px;
+     border-radius: 20px; 
+     min-height: 80px;
+     margin-bottom: 20px;
+}
+nav{
+    text-align: center;
+}
+nav > a{
+    color: var(--cinzadark);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+nav>a:hover{
+    color: var(--azul);
+    background-color: #becfdfb6;
+    border-radius: 10px;
+}
+main{
+     min-width: 320px;
+     max-width: 1200px;
+     background-color: var(--cor1);
+     margin: auto;
+     padding: 20px;
+     box-shadow: 0px 0px 10px rgb(129, 129, 129);
+     border-radius: 10px; 
+     margin-bottom: 30px;
+}
+footer{
+    background-color: var(--cinzadark);
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 0.8em;
+}
+footer a{
+    color: #f1f1f1;
+    font-weight: bolder;
+    text-decoration: none;
+}
+img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 10px; 
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1em;
+    font-size: 1em;
+}
