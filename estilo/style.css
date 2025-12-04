@@ -24,13 +24,22 @@ body{
 }
 header{
      background-color: var(--cor1) ;
-     padding: 10px;
+     padding: 10px 20px;
      border-radius: 20px; 
-     min-height: 80px;
+     min-height: 70px;
      margin-bottom: 20px;
+     display: flex;
+     align-items: center;
+}
+#logo{
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 700;
 }
 nav{
+    display: flex;
     text-align: center;
+    margin: 0;
 }
 nav > a{
     color: var(--cinzadark);
@@ -38,6 +47,7 @@ nav > a{
     padding: 10px;
     font-weight: bold;
     transition-duration: .5s;
+   
 }
 nav>a:hover{
     color: var(--azul);
