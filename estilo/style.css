@@ -30,6 +30,7 @@ header{
      display: flex;
      align-items: center;
      box-shadow: 0px 0px 10px rgba(133, 133, 133, 0.199);
+     position: relative;
 }
 #logo{
     margin: 0;
@@ -39,8 +40,9 @@ header{
 }
 nav{
     display: flex;
-    text-align: center;
-    margin-left: 100px;
+    position: absolute;/* Tira o nav do fluxo e permite centralizar no meio da tela */
+    left: 50%;
+    transform: translateX(-50%); /* O segredo para centralizar perfeitamente */
 
 }
 nav > a{
@@ -61,7 +63,7 @@ main{
      max-width: 100%;
      margin: auto;
      margin-bottom: 30px;
-     min-height: 80dvh;
+     min-height: 100dvh;
 }
 footer{
     background-color: var(--azuldark);
@@ -72,6 +74,7 @@ footer{
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 footer a{
     color: #f1f1f1;
@@ -84,7 +87,9 @@ footer p{
     text-decoration: none;
     display: flex;
     text-align: center;
-    margin-left: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 #logofooter{
@@ -142,4 +147,8 @@ main p{
     margin: 0;
     font-weight: 700;
     text-align: left;
+}
+.about{
+    text-align: center;
+    font-size: 1.5em;
 }
